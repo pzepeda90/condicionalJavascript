@@ -78,22 +78,8 @@
         <button class="botonLlevar" id="btnComprobar" onclick="comprobarPassword()">Comprobar Password</button>
     </div>
 
-    <script>
-        function comprobarPassword () {
-            const digito1 = parseInt(document.getElementById('select1').value)
-            const digito2 = parseInt(document.getElementById('select2').value)
-            const digito3 = parseInt(document.getElementById('select3').value)
-
-            console.log(`Valores seleccionados: ${digito1}, ${digito2}, ${digito3}`);
-
-            if (digito1 === 9 && digito2 === 1 && digito3 === 1) {
-                 alert("Password 1 Correcto");
-             } else if (digito1 === 7 && digito2 === 1 && digito3 === 4) {
-                    alert("Password 2 Correcto");
-             }else {
-                 alert("Password Incorrecto");
-             }
-            }
+    <script src="./assets/js/script.js">
+      
     </script>
 
     <div class="footer">
