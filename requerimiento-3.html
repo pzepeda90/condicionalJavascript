@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/549029b350.js" crossorigin="anonymous"></script><link href="assess/css/style.css"
+</head>
+
+<body>
+    <div class="header">
+        <h1>Password</h1>
+    </div>
+    
+    <div class="main">
+        <div class="card" style="width: 25rem;">
+            <img src="./assets/img/bulbasaur.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dígito n°1</h5>
+              <select class="select" id="select1">
+                <option value="0" id="0a" selected>0</option>
+                <option value="1" id="1a">1</option>
+                <option value="2" id="2a">2</option>
+                <option value="3" id="3a">3</option>
+                <option value="4" id="4a">4</option>
+                <option value="5" id="5a">5</option>
+                <option value="6" id="6a">6</option>
+                <option value="7" id="7a">7</option>
+                <option value="8" id="8a">8</option>
+                <option value="9" id="9a">9</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="card" style="width: 25rem;">
+            <img src="./assets/img/squiertle.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dígito n°2</h5>
+              <select class="select" id="select2">
+                <option value="0" id="0b" selected>0</option>
+                <option value="1" id="1b">1</option>
+                <option value="2" id="2b">2</option>
+                <option value="3" id="3b">3</option>
+                <option value="4" id="4b">4</option>
+                <option value="5" id="5b">5</option>
+                <option value="6" id="6b">6</option>
+                <option value="7" id="7b">7</option>
+                <option value="8" id="8b">8</option>
+                <option value="9" id="9b">9</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="card" style="width: 25rem;">
+            <img src="./assets/img/Charmander.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dígito n°3</h5>
+              <select class="select" id="select3">
+                <option value="0" id="0c" selected>0</option>
+                <option value="1" id="1c">1</option>
+                <option value="2" id="2c">2</option>
+                <option value="3" id="3c">3</option>
+                <option value="4" id="4c">4</option>
+                <option value="5" id="5c">5</option>
+                <option value="6" id="6c">6</option>
+                <option value="7" id="7c">7</option>
+                <option value="8" id="8c">8</option>
+                <option value="9" id="9c">9</option>
+              </select>
+            </div>
+          </div>
+    </div>
+
+    <div class="contenedorBoton">
+        <button class="botonLlevar" id="btnComprobar" onclick="comprobarPassword()">Comprobar Password</button>
+    </div>
+
+    <script>
+        function comprobarPassword () {
+            const digito1 = parseInt(document.getElementById('select1').value)
+            const digito2 = parseInt(document.getElementById('select2').value)
+            const digito3 = parseInt(document.getElementById('select3').value)
+
+            console.log(`Valores seleccionados: ${digito1}, ${digito2}, ${digito3}`);
+
+            if (digito1 === 9 && digito2 === 1 && digito3 === 1) {
+                 alert("Password 1 Correcto");
+             } else if (digito1 === 7 && digito2 === 1 && digito3 === 4) {
+                    alert("Password 2 Correcto");
+             }else {
+                 alert("Password Incorrecto");
+             }
+            }
+    </script>
+
+    <div class="footer">
+        <h5>Desafio 2024</h5> 
+    </div>
+    
+</body>
+</html>

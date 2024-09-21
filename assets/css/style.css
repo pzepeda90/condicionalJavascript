@@ -1,0 +1,82 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 20%;
+    padding: 2rem;
+    background-color: antiquewhite;
+}
+
+.main {
+    height: 65%;
+    display: flex;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    align-items:center;
+    align-content: center;
+    gap: 10rem
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    background-color: antiquewhite;
+    padding: 1.5rem;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+
+.boton {
+    background-color:aqua;
+    border-radius: 5px;
+    border-color: blue;
+    border-width: 0.5rem;
+    color:blueviolet;
+    font-size: large;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.contenedorBoton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.botonLlevar {
+    background-color: blue;
+    color:aliceblue;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+#imagenId {
+    height: 350px;
+}
